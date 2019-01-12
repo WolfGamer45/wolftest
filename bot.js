@@ -279,10 +279,10 @@ client.on("message", message => {
  
 
 client.on("guildMemberAdd", (member) => {
-client.channels.get('528645296167845912').edit({name : `『  MEMBERS ➡ ${member.guild.memberCount} 』`});
+client.channels.get('532255107497328651').edit({name : `『  MEMBERS ➡ ${member.guild.memberCount} 』`});
 })
 client.on("guildMemberRemove", (member) => {
-client.channels.get('528645296167845912').edit({name : `『  MEMBERS ➡ ${member.guild.memberCount} 』`});
+client.channels.get('532255107497328651').edit({name : `『  MEMBERS ➡ ${member.guild.memberCount} 』`});
 })
 
 
