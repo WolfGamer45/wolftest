@@ -278,6 +278,12 @@ client.on("message", message => {
 //Toxic Codes//Toxic Codes//Toxic Codes //n3k4a //Toxic Codes//Toxic Codes//Toxic Codes
  
 
+client.on("guildMemberAdd", (member) => {
+client.channels.get('528645296167845912').edit({name : `『  MEMBERS ➡ ${member.guild.memberCount} 』`});
+})
+client.on("guildMemberRemove", (member) => {
+client.channels.get('528645296167845912').edit({name : `『  MEMBERS ➡ ${member.guild.memberCount} 』`});
+})
 
 
 
