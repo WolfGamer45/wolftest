@@ -292,7 +292,7 @@ client.on('guildMemberAdd', member => {
  
   if (!channel) return;
 
-  channel.send(`Welcome to the server, ${member}`);
+  channel.send(`#user ${member}`);
 });
 
 
