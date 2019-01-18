@@ -294,7 +294,8 @@ client.on('guildMemberAdd', member => {
 
   channel.send(`#user ${member}`);
 });
- const antijoin = JSON.parse(fs.readFileSync('./antijoin.json', 'UTF8'));
+const fs = require('fs')
+const antijoin = JSON.parse(fs.readFileSync('./antijoin.json', 'UTF8'));
 client.on('message', message => {
     if(message.content.startsWith(prefix + "antifake on")) {
         if(!message.channel.guild) return message.reply('**This Command Only For Servers**');
