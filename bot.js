@@ -286,7 +286,14 @@ client.channels.get('532255107497328651').edit({name : `『  MEMBERS ➡ ${membe
 })
 
 
+client.on('guildMemberAdd', member => {
+  
+  const channel = member.guild.channels.find(ch => ch.name === '₪welcom₪ ');
+ 
+  if (!channel) return;
 
+  channel.send(`Welcome to the server, ${member}`);
+});
 
 
 
